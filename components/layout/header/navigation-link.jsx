@@ -4,7 +4,7 @@ import classes from "./navigation-link.module.css";
 
 export default function NavigationLink({ href, title, text }) {
   return (
-    <li>
+    <li className={classes.link}>
       <Link href={href} title={title}>
         {text}
       </Link>
