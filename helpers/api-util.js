@@ -6,10 +6,10 @@ export async function getAllEvents() {
   const data = await response.json();
 
   //   Transform all events into objects in array
-  const events = [];
+  const allEvents = [];
   for (const key in data) {
-    events.push({ ...data[key] });
+    allEvents.push({ id: key, ...data[key] });
   }
 
-  return events;
+  return allEvents;
 }
