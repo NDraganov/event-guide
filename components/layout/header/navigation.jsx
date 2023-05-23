@@ -8,14 +8,14 @@ export default function Navigation() {
       <nav>
         <ul>
           <NavigationLink
-            href={"/frontend-events"}
-            title={"Frontend events"}
-            text={"Frontend events"}
+            href={"/front-end-events"}
+            title={"Front-end events"}
+            text={"Front-end events"}
           />
           <NavigationLink
-            href={"/backend-events"}
-            title={"Backend events"}
-            text={"Backend events"}
+            href={"/back-end-events"}
+            title={"Back-end events"}
+            text={"Back-end events"}
           />
           <NavigationLink
             href={"/full-stack-events"}
