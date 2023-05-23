@@ -1,3 +1,7 @@
+import Image from "next/image";
+
+import classes from "./event-item.module.css";
+
 export default function EventItem({
   title,
   image,
@@ -6,12 +10,14 @@ export default function EventItem({
   date,
 }) {
   return (
-    <div>
-      <h2>{title}</h2>
-      <img src={image} alt={title} />
-      <p>{description}</p>
-      <address>{location}</address>
-      <p>{date}</p>
+    <div className={classes.item}>
+      <Image src={image} alt={title} fill />
+      <div>
+        <h2>{title}</h2>
+        <p className={classes.description}>{description}</p>
+        <address>{location}</address>
+        <p className={classes.date}>{date}</p>
+      </div>
     </div>
   );
 }
