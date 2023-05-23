@@ -4,6 +4,9 @@
   justify-content: space-between;
   padding: 1rem 2rem;
 }
+.header h2 {
+  color: var(--orange);
+}
 .header nav ul {
   display: flex;
   align-items: center;

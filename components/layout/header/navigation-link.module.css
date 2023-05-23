@@ -1,4 +1,9 @@
 .link a {
-  font-size: 1.2rem;
+  color: var(--orange);
+  font-size: 1.3rem;
+  font-weight: 600;
   text-decoration: none;
+}
+.link a:hover {
+  color: var(--light-orange);
 }

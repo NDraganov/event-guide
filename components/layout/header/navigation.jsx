@@ -10,17 +10,17 @@ export default function Navigation() {
           <NavigationLink
             href={"/front-end-events"}
             title={"Front-end events"}
-            text={"Front-end events"}
+            text={"Front-end"}
           />
           <NavigationLink
             href={"/back-end-events"}
             title={"Back-end events"}
-            text={"Back-end events"}
+            text={"Back-end"}
           />
           <NavigationLink
             href={"/full-stack-events"}
             title={"Full stack events"}
-            text={"Full stack events"}
+            text={"Full stack"}
           />
           <NavigationLink
             href={"/all-events"}

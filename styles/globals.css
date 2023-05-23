@@ -8,3 +8,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --light-grey: #f6f1f1;
+  --orange: #ff6000;
+  --light-orange: #ff9f45;
+}
+.body {
+  background-color: var(--light-grey);
+}
