@@ -1,8 +1,11 @@
 import Head from "next/head";
 import { Fragment } from "react";
 import EventsList from "@/components/events/events-list";
+import { getFeaturedEvents } from "@/helpers/api-util";
 
-export default function Home() {
+import classes from "./index.module.css";
+
+export default function Home({ featuredEvents }) {
   return (
     <Fragment>
       <Head>
@@ -10,7 +13,20 @@ export default function Home() {
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div></div>
+      <div className={classes.home}>
+        <EventsList eventsItems={featuredEvents} />
+      </div>
     </Fragment>
   );
+}
+
+export async function getStaticProps() {
+  const featuredEvents = await getFeaturedEvents();
+
+  return {
+    props: {
+      featuredEvents: featuredEvents,
+    },
+    revalidate: 300,
+  };
 }
