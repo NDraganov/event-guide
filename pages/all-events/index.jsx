@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import EventsList from "@/components/events/events-list";
 import { getAllEvents } from "@/helpers/api-util";
 
-import classes from "./all-events.module.css";
+import classes from "./index.module.css";
 
 export default function AllEventsPage({ allEvents }) {
   if (!allEvents) {
