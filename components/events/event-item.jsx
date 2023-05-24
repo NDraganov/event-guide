@@ -9,6 +9,13 @@ export default function EventItem({
   location,
   date,
 }) {
+  const formattedAddress = location.replaceAll(",", "\n");
+  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
   return (
     <div className={classes.item}>
       <div>
@@ -17,8 +24,8 @@ export default function EventItem({
       <div className={classes.details}>
         <h2>{title}</h2>
         <p className={classes.description}>{description}</p>
-        <address>{location}</address>
-        <p className={classes.date}>{date}</p>
+        <p className={classes.location}>{formattedAddress}</p>
+        <p className={classes.date}>{formattedDate}</p>
       </div>
     </div>
   );
