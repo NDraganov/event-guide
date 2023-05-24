@@ -23,3 +23,8 @@ export async function getFrontEndEvents() {
   const allEvents = await getAllEvents();
   return allEvents.filter((event) => event.frontEnd);
 }
+
+export async function getBackEndEvents() {
+  const allEvents = await getAllEvents();
+  return allEvents.filter((event) => event.backEnd);
+}
