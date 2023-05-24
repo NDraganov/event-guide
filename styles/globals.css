@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
 * {
   position: relative;
   top: 0;
@@ -9,14 +11,16 @@
   box-sizing: border-box;
 }
 :root {
+  --black: #000000;
   --grey: #9db2bf;
   --light-grey: #f6f1f1;
   --orange: #ff6000;
   --light-orange: #ff9f45;
   --redish: #db005b;
 }
-.body {
+body {
   background-color: var(--light-grey);
+  font-family: "Oswald", sans-serif;
 }
 h1 {
   color: var(--redish);
