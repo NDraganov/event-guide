@@ -9,6 +9,7 @@
   box-sizing: border-box;
 }
 :root {
+  --grey: #9db2bf;
   --light-grey: #f6f1f1;
   --orange: #ff6000;
   --light-orange: #ff9f45;

@@ -1,7 +1,7 @@
 .list {
   display: grid;
   place-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 .list li {
   list-style: none;

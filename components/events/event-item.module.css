@@ -1,9 +1,10 @@
 .item {
   display: grid;
-  grid-template-columns: 30% auto;
-  border: 1px solid var(--orange);
+  grid-template-columns: 40% auto;
+  border: 1px solid var(--light-orange);
+  box-shadow: 5px 7px 15px 3px var(--grey);
   border-radius: 0.5rem;
-  width: 60vw;
+  width: 75vw;
 }
 .item img {
   border-radius: 7px 0 0 7px;
