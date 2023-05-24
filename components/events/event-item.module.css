@@ -1,10 +1,15 @@
 .item {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 30% auto;
   border: 1px solid var(--orange);
   border-radius: 0.5rem;
-  width: 50vw;
-  padding: 1.5rem;
+  width: 60vw;
+}
+.item img {
+  border-radius: 7px 0 0 7px;
+}
+.item .details {
+  padding: 1rem;
 }
 .item h2 {
   color: var(--redish);

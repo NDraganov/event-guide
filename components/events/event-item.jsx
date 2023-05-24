@@ -11,8 +11,10 @@ export default function EventItem({
 }) {
   return (
     <div className={classes.item}>
-      <Image src={image} alt={title} fill />
       <div>
+        <Image src={image} alt={title} fill />
+      </div>
+      <div className={classes.details}>
         <h2>{title}</h2>
         <p className={classes.description}>{description}</p>
         <address>{location}</address>
