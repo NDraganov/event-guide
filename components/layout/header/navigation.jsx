@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import NavigationLink from "./navigation-link";
 
 import classes from "./navigation.module.css";
+import NavigationBrand from "./navigation-brand";
 
 export default function Navigation() {
   const [header, setHeader] = useState(false);
@@ -25,7 +26,7 @@ export default function Navigation() {
 
   return (
     <header className={header ? classes.scrolled : classes.header}>
-      <h2 className={classes.title}>EVENTS GUIDE</h2>
+      <NavigationBrand href={"/"} title={"Home page"} text={"DevGuide"} />
       <nav>
         <ul className={classes.links}>
           <NavigationLink
