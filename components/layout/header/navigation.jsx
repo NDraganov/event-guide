@@ -1,12 +1,27 @@
+import { useEffect, useState } from "react";
 import NavigationLink from "./navigation-link";
 import classes from "./navigation.module.css";
 
 export default function Navigation() {
+  const [header, setHeader] = useState(false);
+
+  const changeBackgroundHeader = () => {
+    if (window.scrollY >= 80) {
+      setHeader(true);
+    } else {
+      setHeader(false);
+    }
+  };
+
+  useEffect(() => {
+    changeBackgroundHeader();
+    window.addEventListener("scroll", changeBackgroundHeader);
+  }, [header]);
   return (
-    <header className={classes.header}>
-      <h2>Events Guide</h2>
+    <header className={header ? classes.scrolled : classes.header}>
+      <h2 className={classes.title}>Events Guide</h2>
       <nav>
-        <ul>
+        <ul className={classes.links}>
           <NavigationLink
             href={"/front-end-events"}
             title={"Front-end events"}

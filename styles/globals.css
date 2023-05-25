@@ -12,6 +12,7 @@
 }
 :root {
   --black: #000000;
+  --black-opacity: #00000099;
   --grey: #9db2bf;
   --light-grey: #f6f1f1;
   --orange: #ff6000;
