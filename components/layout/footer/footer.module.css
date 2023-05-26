@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+.explanation p {
+  font-size: 1.1rem;
+}
+.explanation p span {
+  color: var(--redish);
+}

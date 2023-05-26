@@ -1,0 +1,14 @@
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footerNav a {
+  color: var(--black);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.footerNav a:hover {
+  color: var(--redish);
+}

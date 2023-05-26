@@ -4,7 +4,7 @@ import classes from "./footer-navigation.module.css";
 
 export default function FooterNavigation() {
   return (
-    <div>
+    <div className={classes.footerNav}>
       <Link href={"/about-us"} title={"About us"}>
         About us
       </Link>
