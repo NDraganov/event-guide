@@ -1,0 +1,20 @@
+.creator {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.section a svg {
+  font-size: 2rem;
+  color: var(--redish);
+}
+.section a svg:hover {
+  color: var(--orange);
+}
+.section p {
+  font-size: 1.1rem;
+}

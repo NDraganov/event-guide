@@ -9,7 +9,7 @@ export default function Creator() {
   const gitHref = "https://github.com/NDraganov";
   const currentYear = new Date().getFullYear();
   return (
-    <div>
+    <div className={classes.creator}>
       <div className={classes.section}>
         <Link href={linkedHref} title="LinkedIn" target="_blank">
           <AiOutlineLinkedin />
@@ -18,10 +18,8 @@ export default function Creator() {
           <AiOutlineGithub />
         </Link>
       </div>
-      <div>
-        <p>Nedyalko Draganov</p>
-      </div>
       <div className={classes.section}>
+        <p>Nedyalko Draganov</p>
         <p>
           &copy;
           <span>{currentYear}</span>
