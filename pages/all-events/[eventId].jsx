@@ -1,9 +1,25 @@
 import { Fragment } from "react";
+import EventTitle from "@/components/event-details/event-title";
+import EventLogistics from "@/components/event-details/event-logistics";
+import EventDescription from "@/components/event-details/event-description";
 
 import { getAllEvents, getEventById } from "@/helpers/api-util";
 
 export default function EventDetailsPage({ selectedEvent }) {
-  return <Fragment></Fragment>;
+  if (!selectedEvent) {
+    return <p>Event not found!</p>;
+  }
+  return (
+    <Fragment>
+      <EventTitle title={selectedEvent.title} />
+      <EventLogistics
+        image={selectedEvent.image}
+        date={selectedEvent.date}
+        location={selectedEvent.location}
+      />
+      <EventDescription description={selectedEvent.description} />
+    </Fragment>
+  );
 }
 
 export async function getStaticProps(context) {
@@ -14,6 +30,7 @@ export async function getStaticProps(context) {
     props: {
       selectedEvent: selectedEvent,
     },
+    revalidate: 60,
   };
 }
 

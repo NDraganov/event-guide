@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import classes from "./event-logistics.module.css";
 
-export default function EventLogistics({ image, date, address }) {
+export default function EventLogistics({ image, date, location }) {
   const formattedDate = new Date(date).toLocaleDateString("en-US", {
     day: "numeric",
     month: "long",
@@ -12,14 +12,14 @@ export default function EventLogistics({ image, date, address }) {
     <section>
       <div>
         <div>
-          <Image src={image} />
+          <Image src={image} width={400} height={250} />
         </div>
         <div>
           <div>
             <time>{formattedDate}</time>
           </div>
           <div>
-            <address>{address}</address>
+            <address>{location}</address>
           </div>
         </div>
       </div>
