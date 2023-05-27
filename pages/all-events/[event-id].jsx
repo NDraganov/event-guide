@@ -1,10 +1,10 @@
-import EventTitle from "@/components/event-details/event-title";
+import EventDetails from "@/components/event-details/event-details";
 import { Fragment } from "react";
 
 export default function EventDetailsPage() {
   return (
     <Fragment>
-      <EventTitle title={"Fundamentals of React.js"} />
+      <EventDetails />
     </Fragment>
   );
 }
