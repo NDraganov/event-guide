@@ -5,7 +5,7 @@ import { BsCalendarDate } from "react-icons/bs";
 
 import classes from "./event-item.module.css";
 
-export default function EventItem({ title, image, intro, location, date }) {
+export default function EventItem({ title, image, intro, location, date, id }) {
   const formattedDate = new Date(date).toLocaleDateString("en-US", {
     day: "numeric",
     month: "long",
@@ -31,7 +31,7 @@ export default function EventItem({ title, image, intro, location, date }) {
           </div>
         </div>
         <Button
-          href={"/event-id"}
+          href={`/all-events/${id}`}
           title={"Go to event page"}
           text={"EVENT DETAILS"}
         />

@@ -8,6 +8,7 @@ export default function EventsList({ eventsItems }) {
       {eventsItems.map((event) => (
         <li key={event.id}>
           <EventItem
+            id={event.id}
             title={event.title}
             image={event.image}
             intro={event.intro}
