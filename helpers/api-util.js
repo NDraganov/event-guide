@@ -33,3 +33,8 @@ export async function getFullStackEvents() {
   const allEvents = await getAllEvents();
   return allEvents.filter((event) => event.fullStack);
 }
+
+export async function getEventById(id) {
+  const allEvents = await getAllEvents();
+  return allEvents.find((event) => event.id === id);
+}
