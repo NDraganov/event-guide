@@ -10,7 +10,7 @@ export default function EventsList({ eventsItems }) {
           <EventItem
             title={event.title}
             image={event.image}
-            description={event.description}
+            intro={event.intro}
             location={event.location}
             date={event.date}
           />
