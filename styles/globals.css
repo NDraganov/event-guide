@@ -18,6 +18,7 @@
   --orange: #ff6000;
   --light-orange: #ff9f45;
   --redish: #db005b;
+  --green: #82cd47;
 }
 body {
   background-color: var(--light-grey);

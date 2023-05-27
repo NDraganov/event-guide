@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Button from "../ui/button";
+import { GoLocation } from "react-icons/go";
+import { BsCalendarDate } from "react-icons/bs";
 
 import classes from "./event-item.module.css";
 
 export default function EventItem({ title, image, intro, location, date }) {
-  const formattedAddress = location.replaceAll(",", "\n");
   const formattedDate = new Date(date).toLocaleDateString("en-US", {
     day: "numeric",
     month: "long",
@@ -16,12 +18,23 @@ export default function EventItem({ title, image, intro, location, date }) {
         <Image src={image} alt={title} fill />
       </div>
       <div className={classes.details}>
-        <h2>{title}</h2>
-        <p className={classes.intro}>{intro}</p>
-        <div className={classes.eventFooter}>
-          <p className={classes.location}>{formattedAddress}</p>
-          <p className={classes.date}>{formattedDate}</p>
+        <div>
+          <h2>{title}</h2>
+          <p className={classes.intro}>{intro}</p>
+          <div className={classes.eventFooter}>
+            <p className={classes.location}>
+              <GoLocation /> {location}
+            </p>
+            <p className={classes.date}>
+              <BsCalendarDate /> {formattedDate}
+            </p>
+          </div>
         </div>
+        <Button
+          href={"/event-id"}
+          title={"Go to event page"}
+          text={"EVENT DETAILS"}
+        />
       </div>
     </div>
   );

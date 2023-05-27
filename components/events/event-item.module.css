@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 50% auto;
-  box-shadow: 2px 4px 7px 2px var(--grey);
+  box-shadow: 0px 5px 10px var(--grey);
   border-radius: 0.5rem;
   width: 30vw;
   height: 60vh;
@@ -21,13 +21,14 @@
   border-radius: 0.5rem 0.5rem 0 0;
 }
 .item .details {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between; */
+  justify-content: space-between;
   padding: 1rem;
 }
 .item h2 {
   color: var(--redish);
+  font-weight: 400;
   padding-bottom: 0.5rem;
 }
 .item .intro {
@@ -42,13 +43,11 @@
   display: flex;
   justify-content: space-between;
 }
-.item .location {
-  color: var(--orange);
-  padding-bottom: 0.5rem;
-  white-space: pre;
-  letter-spacing: 1px;
-}
+.item .location,
 .item .date {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
   color: var(--redish);
   letter-spacing: 1px;
 }
