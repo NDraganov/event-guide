@@ -7,10 +7,13 @@
   display: grid;
   place-items: center;
   grid-template-columns: auto auto;
-  width: 60%;
+  gap: 5rem;
   height: 60vh;
 }
 .eventDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   color: var(--redish);
   font-size: 1.5rem;
   font-weight: 400;

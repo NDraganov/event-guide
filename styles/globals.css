@@ -30,7 +30,7 @@ main {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  margin-top: 5rem;
+  margin: 5rem 0;
 }
 h1 {
   color: var(--redish);
