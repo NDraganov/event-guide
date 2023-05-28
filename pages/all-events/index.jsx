@@ -19,10 +19,10 @@ export default function AllEventsPage({ allEvents }) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className={classes.all}>
+      <main>
         <h1>All events</h1>
         <EventsList eventsItems={allEvents} />
-      </div>
+      </main>
     </Fragment>
   );
 }

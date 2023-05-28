@@ -16,10 +16,10 @@ export default function FullStackEventsPage({ fullStackEvents }) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className={classes.full}>
+      <main>
         <h1>Full-stack events</h1>
         <EventsList eventsItems={fullStackEvents} />
-      </div>
+      </main>
     </Fragment>
   );
 }

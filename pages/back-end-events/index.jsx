@@ -16,10 +16,10 @@ export default function BackEndPage({ backEndEvents }) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className={classes.back}>
+      <main>
         <h1>Back-end events</h1>
         <EventsList eventsItems={backEndEvents} />
-      </div>
+      </main>
     </Fragment>
   );
 }

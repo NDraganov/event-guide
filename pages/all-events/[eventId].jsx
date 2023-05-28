@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import EventTitle from "@/components/event-details/event-title";
 import EventLogistics from "@/components/event-details/event-logistics";
 import EventDescription from "@/components/event-details/event-description";
@@ -10,7 +9,7 @@ export default function EventDetailsPage({ selectedEvent }) {
     return <p>Event not found!</p>;
   }
   return (
-    <Fragment>
+    <main>
       <EventTitle title={selectedEvent.title} />
       <EventLogistics
         image={selectedEvent.image}
@@ -18,7 +17,7 @@ export default function EventDetailsPage({ selectedEvent }) {
         location={selectedEvent.location}
       />
       <EventDescription description={selectedEvent.description} />
-    </Fragment>
+    </main>
   );
 }
 

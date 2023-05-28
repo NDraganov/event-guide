@@ -16,10 +16,10 @@ export default function FrontEndPage({ frontEndEvents }) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className={classes.front}>
+      <main>
         <h1>Front-end events</h1>
         <EventsList eventsItems={frontEndEvents} />
-      </div>
+      </main>
     </Fragment>
   );
 }
