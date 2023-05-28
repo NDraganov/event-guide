@@ -19,6 +19,8 @@
   --light-orange: #ff9f45;
   --redish: #db005b;
   --green: #82cd47;
+  --blue: #146c94;
+  --light-blue: #19a7ce;
 }
 body {
   background-color: var(--light-grey);

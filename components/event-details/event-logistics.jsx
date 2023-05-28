@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { GoLocation } from "react-icons/go";
+import { BsCalendarDate } from "react-icons/bs";
 
 import classes from "./event-logistics.module.css";
 
@@ -9,17 +11,23 @@ export default function EventLogistics({ image, date, location }) {
     year: "numeric",
   });
   return (
-    <section>
-      <div>
+    <section className={classes.logistics}>
+      <div className={classes.container}>
         <div>
-          <Image src={image} width={400} height={250} />
+          <Image src={image} width={500} height={300} />
         </div>
-        <div>
+        <div className={classes.eventDetails}>
           <div>
-            <time>{formattedDate}</time>
+            <time>
+              <BsCalendarDate />
+              {formattedDate}
+            </time>
           </div>
-          <div>
-            <address>{location}</address>
+          <div className={classes.address}>
+            <address>
+              <GoLocation />
+              {location}
+            </address>
           </div>
         </div>
       </div>

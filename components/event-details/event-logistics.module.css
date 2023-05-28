@@ -1,0 +1,30 @@
+.logistics {
+  display: grid;
+  place-items: center;
+  height: 70vh;
+}
+.logistics .container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto auto;
+  width: 60%;
+  height: 60vh;
+}
+.eventDetails {
+  color: var(--redish);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.eventDetails time,
+.eventDetails address {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.eventDetails .address {
+  color: var(--black);
+  font-weight: 300;
+}
+.eventDetails .container img {
+  border-radius: 0.5rem;
+}

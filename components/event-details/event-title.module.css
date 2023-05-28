@@ -1,14 +1,9 @@
 .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(to bottom right, #146c94, #19a7ce);
-  height: 20vh;
   margin-top: 5rem;
 }
 .title h1 {
   color: var(--light-grey);
   font-size: 4rem;
   margin: 0;
-  text-shadow: 0px 2px 8px #146c94;
+  text-shadow: 0px 2px 8px var(--redish);
 }
