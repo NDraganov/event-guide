@@ -2,13 +2,13 @@ import Head from "next/head";
 import { Fragment } from "react";
 import EventsList from "@/components/events/events-list";
 import EventsSearchTitle from "@/components/events-search/events-search-title";
-import { getAllEvents } from "@/helpers/api-util";
+import { getAllEvents, getEventsByTitle } from "@/helpers/api-util";
 
 import classes from "./index.module.css";
 
-export default function AllEventsPage({ allEvents }) {
-  if (!allEvents) {
-    return <p>Loading...</p>;
+export default function AllEventsPage({ allEvents, eventsByTitle }) {
+  if (!allEvents || !eventsByTitle) {
+    return <p>Events not found!</p>;
   }
   return (
     <Fragment>
@@ -22,7 +22,7 @@ export default function AllEventsPage({ allEvents }) {
       </Head>
       <main>
         <h1>All events</h1>
-        <EventsSearchTitle />
+        <EventsSearchTitle title={eventsByTitle} />
         <EventsList eventsItems={allEvents} />
       </main>
     </Fragment>
@@ -31,9 +31,11 @@ export default function AllEventsPage({ allEvents }) {
 
 export async function getStaticProps() {
   const allEvents = await getAllEvents();
+  const eventsByTitle = await getEventsByTitle();
   return {
     props: {
       allEvents: allEvents,
+      eventsByTitle: eventsByTitle,
     },
     revalidate: 60,
   };
