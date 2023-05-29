@@ -38,3 +38,8 @@ export async function getEventById(id) {
   const allEvents = await getAllEvents();
   return allEvents.find((event) => event.id === id);
 }
+
+export async function getEventsByTitle() {
+  const allEvents = await getAllEvents();
+  return allEvents.filter((event) => event.title);
+}

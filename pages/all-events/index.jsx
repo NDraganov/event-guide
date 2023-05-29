@@ -1,10 +1,10 @@
 import Head from "next/head";
 import { Fragment } from "react";
 import EventsList from "@/components/events/events-list";
+import EventsSearchTitle from "@/components/events-search/events-search-title";
 import { getAllEvents } from "@/helpers/api-util";
 
 import classes from "./index.module.css";
-import EventsSearchTitle from "@/components/events-search/events-search-title";
 
 export default function AllEventsPage({ allEvents }) {
   if (!allEvents) {
