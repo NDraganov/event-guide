@@ -1,6 +1,23 @@
 .formTitle {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 30vw;
+  gap: 2rem;
+  border: 1px solid var(--black);
+  border-radius: 0.4rem;
+  width: 40vw;
+  padding: 1rem;
+}
+.formTitle .control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.formTitle .control label {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.formTitle .control select {
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.5rem;
 }
