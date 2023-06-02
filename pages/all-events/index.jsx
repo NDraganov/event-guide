@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { Fragment } from "react";
 import EventsList from "@/components/events/events-list";
 import EventsSearchTitle from "@/components/events-search/events-search-title";
@@ -7,6 +8,13 @@ import { getAllEvents, getEventsByTitle } from "@/helpers/api-util";
 import classes from "./index.module.css";
 
 export default function AllEventsPage({ allEvents, eventsByTitle }) {
+  const router = useRouter();
+
+  const findEventByTitleHandler = (title) => {
+    const pathTitle = `all-events/${title}`;
+    router.push(pathTitle);
+  };
+
   if (!allEvents || !eventsByTitle) {
     return <p>Events not found!</p>;
   }
@@ -22,7 +30,10 @@ export default function AllEventsPage({ allEvents, eventsByTitle }) {
       </Head>
       <main>
         <h1>All events</h1>
-        <EventsSearchTitle title={eventsByTitle} />
+        <EventsSearchTitle
+          title={eventsByTitle}
+          onSearch={findEventByTitleHandler}
+        />
         <EventsList eventsItems={allEvents} />
       </main>
     </Fragment>
