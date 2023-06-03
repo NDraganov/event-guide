@@ -5,20 +5,20 @@ import classes from "./events-search-title.module.css";
 
 export default function EventsSearchTitle(props) {
   const titleRef = useRef();
-  const eventsTitle = props.title;
+  const allEvents = props.title;
 
-  const onSubmitHandler = (event) => {
+  const onSubmitTitleHandler = (event) => {
     event.preventDefault();
     const selectedTitle = titleRef.current.value;
-    props.onSearch(selectedTitle);
+    props.onSearchTitle(selectedTitle);
   };
   return (
     <section>
-      <form className={classes.formTitle} onSubmit={onSubmitHandler}>
+      <form className={classes.formTitle} onSubmit={onSubmitTitleHandler}>
         <div className={classes.control}>
           <label htmlFor="title">Title</label>
           <select name="" id="title" ref={titleRef}>
-            {eventsTitle.map((event) => (
+            {allEvents.map((event) => (
               <option value={event.id} key={event.id}>
                 {event.title}
               </option>

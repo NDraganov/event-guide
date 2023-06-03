@@ -3,11 +3,12 @@ import { useRouter } from "next/router";
 import { Fragment } from "react";
 import EventsList from "@/components/events/events-list";
 import EventsSearchTitle from "@/components/events-search/events-search-title";
-import { getAllEvents, getEventsByTitle } from "@/helpers/api-util";
+import EventsSearchDate from "@/components/events-search/events-search-date";
+import { getAllEvents } from "@/helpers/api-util";
 
 import classes from "./index.module.css";
 
-export default function AllEventsPage({ allEvents, eventsByTitle }) {
+export default function AllEventsPage({ allEvents }) {
   const router = useRouter();
 
   const findEventByTitleHandler = (title) => {
@@ -15,7 +16,7 @@ export default function AllEventsPage({ allEvents, eventsByTitle }) {
     router.push(pathTitle);
   };
 
-  if (!allEvents || !eventsByTitle) {
+  if (!allEvents) {
     return <p>Events not found!</p>;
   }
   return (
@@ -31,9 +32,10 @@ export default function AllEventsPage({ allEvents, eventsByTitle }) {
       <main>
         <h1>All events</h1>
         <EventsSearchTitle
-          title={eventsByTitle}
-          onSearch={findEventByTitleHandler}
+          title={allEvents}
+          onSearchTitle={findEventByTitleHandler}
         />
+        <EventsSearchDate />
         <EventsList eventsItems={allEvents} />
       </main>
     </Fragment>
@@ -42,11 +44,9 @@ export default function AllEventsPage({ allEvents, eventsByTitle }) {
 
 export async function getStaticProps() {
   const allEvents = await getAllEvents();
-  const eventsByTitle = await getEventsByTitle();
   return {
     props: {
       allEvents: allEvents,
-      eventsByTitle: eventsByTitle,
     },
     revalidate: 60,
   };
