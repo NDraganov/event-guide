@@ -1,0 +1,29 @@
+.formDate {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid var(--black);
+  border-radius: 0.4rem;
+  width: 40vw;
+  margin: 0.5rem 0;
+  padding: 1rem;
+}
+.formDate .controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.formDate .control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.formDate .control label {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.formDate .control select {
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
