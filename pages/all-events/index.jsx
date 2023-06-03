@@ -11,9 +11,14 @@ import classes from "./index.module.css";
 export default function AllEventsPage({ allEvents }) {
   const router = useRouter();
 
-  const findEventByTitleHandler = (title) => {
+  const findEventsByTitleHandler = (title) => {
     const pathTitle = `all-events/${title}`;
     router.push(pathTitle);
+  };
+
+  const findEventsByDateHandler = (month, year) => {
+    const pathDate = `all-events/${year}/${month}`;
+    router.push(pathDate);
   };
 
   if (!allEvents) {
@@ -33,9 +38,9 @@ export default function AllEventsPage({ allEvents }) {
         <h1>All events</h1>
         <EventsSearchTitle
           title={allEvents}
-          onSearchTitle={findEventByTitleHandler}
+          onSearchTitle={findEventsByTitleHandler}
         />
-        <EventsSearchDate />
+        <EventsSearchDate onSearchDate={findEventsByDateHandler} />
         <EventsList eventsItems={allEvents} />
       </main>
     </Fragment>

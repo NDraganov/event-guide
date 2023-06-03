@@ -19,7 +19,7 @@ export default function EventsSearchTitle(props) {
           <label htmlFor="title">Title</label>
           <select name="" id="title" ref={titleRef}>
             {allEvents.map((event) => (
-              <option value={event.id} key={event.id}>
+              <option value={event.title} key={event.id}>
                 {event.title}
               </option>
             ))}
