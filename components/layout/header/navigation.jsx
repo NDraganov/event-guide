@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import NavigationBrand from "./navigation-brand";
 import NavigationLink from "./navigation-link";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 import classes from "./navigation.module.css";
-import NavigationBrand from "./navigation-brand";
 
 export default function Navigation() {
   const [header, setHeader] = useState(false);
@@ -71,6 +72,7 @@ export default function Navigation() {
           />
         </ul>
       </nav>
+      <HiOutlineMenuAlt3 />
     </header>
   );
 }
