@@ -25,7 +25,7 @@ export default function EventsSearchTitle(props) {
             ))}
           </select>
         </div>
-        <Button text={"Find Events"} />
+        <Button text={"Find Event"} />
       </form>
     </section>
   );
