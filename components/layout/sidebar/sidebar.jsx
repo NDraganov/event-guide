@@ -14,21 +14,25 @@ export default function Sidebar({ style, click }) {
               href={"/front-end-events"}
               title={"Front-end events"}
               text={"FRONT-END"}
+              onClick={click}
             />
             <NavigationLink
               href={"/back-end-events"}
               title={"Back-end events"}
               text={"BACK-END"}
+              onClick={click}
             />
             <NavigationLink
               href={"/full-stack-events"}
               title={"Full stack events"}
               text={"FULL-STACK"}
+              onClick={click}
             />
             <NavigationLink
               href={"/all-events"}
               title={"All events"}
               text={"ALL EVENTS"}
+              onClick={click}
             />
           </ul>
         </nav>
