@@ -13,6 +13,7 @@ export default function EventDetailsPage({ selectedEvent }) {
       <EventTitle title={selectedEvent.title} />
       <EventLogistics
         image={selectedEvent.image}
+        alt={selectedEvent.title}
         date={selectedEvent.date}
         location={selectedEvent.location}
       />

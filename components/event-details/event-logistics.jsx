@@ -4,7 +4,7 @@ import { BsCalendarDate } from "react-icons/bs";
 
 import classes from "./event-logistics.module.css";
 
-export default function EventLogistics({ image, date, location }) {
+export default function EventLogistics({ image, alt, date, location }) {
   const formattedDate = new Date(date).toLocaleDateString("en-US", {
     day: "numeric",
     month: "long",
@@ -14,7 +14,7 @@ export default function EventLogistics({ image, date, location }) {
     <section className={classes.logistics}>
       <div className={classes.container}>
         <div>
-          <Image src={image} width={500} height={300} />
+          <Image src={image} alt={alt} width={500} height={300} />
         </div>
         <div className={classes.eventDetails}>
           <div>
