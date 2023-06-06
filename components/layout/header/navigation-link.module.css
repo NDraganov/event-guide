@@ -2,7 +2,6 @@
   color: var(--orange);
   font-size: 1.3rem;
   font-weight: 700;
-  text-decoration: none;
 }
 .link a:hover {
   color: var(--redish);

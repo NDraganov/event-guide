@@ -37,3 +37,9 @@ h1 {
   margin-bottom: 2rem;
   text-align: center;
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

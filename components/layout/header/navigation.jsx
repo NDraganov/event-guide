@@ -6,7 +6,7 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 import classes from "./navigation.module.css";
 
-export default function Navigation() {
+export default function Navigation({ click }) {
   const [header, setHeader] = useState(false);
 
   const router = useRouter();
@@ -72,7 +72,7 @@ export default function Navigation() {
           />
         </ul>
       </nav>
-      <HiOutlineMenuAlt3 />
+      <HiOutlineMenuAlt3 onClick={click} />
     </header>
   );
 }

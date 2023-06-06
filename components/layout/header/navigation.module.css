@@ -23,6 +23,9 @@
   z-index: 1;
   background-color: var(--black-opacity);
 }
+.scrolled svg {
+  display: none;
+}
 .active {
   color: var(--redish) !important;
   font-weight: 700 !important;
