@@ -47,6 +47,12 @@
 }
 
 @media screen and (max-width: 450px) {
+  .header {
+    padding: 1rem;
+  }
+  .scrolled {
+    padding: 1rem;
+  }
   .header svg {
     display: block;
   }

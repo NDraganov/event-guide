@@ -28,7 +28,9 @@
   color: var(--black);
   font-weight: 300;
 }
-.eventDetails .container img {
+.logistics .container img {
+  min-width: 40vw;
+  min-height: 40vh;
   border-radius: 0.5rem;
 }
 
@@ -38,7 +40,8 @@
     gap: 1rem;
   }
   .logistics .container img {
-    width: 100%;
+    width: 92vw;
+    height: 35vh;
     margin: 0 1rem;
   }
   .eventDetails {

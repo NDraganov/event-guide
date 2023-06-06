@@ -7,3 +7,9 @@
 .brand:hover {
   color: var(--redish);
 }
+
+@media screen and (max-width: 450px) {
+  .brand {
+    font-size: 2rem;
+  }
+}

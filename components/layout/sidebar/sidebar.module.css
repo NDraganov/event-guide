@@ -26,12 +26,12 @@
   top: 0;
   bottom: 0;
   left: 0;
-  bottom: 0;
+  right: 0;
   width: 100vw;
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: var(--black-opacity);
+  background-color: var(--black);
   z-index: 1;
   opacity: 0.5;
 }
