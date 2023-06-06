@@ -4,3 +4,9 @@
   margin: 0;
   text-shadow: 0px 2px 8px var(--redish);
 }
+
+@media screen and (max-width: 450px) {
+  .title h1 {
+    font-size: 2rem;
+  }
+}

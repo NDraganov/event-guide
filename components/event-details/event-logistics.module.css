@@ -31,3 +31,17 @@
 .eventDetails .container img {
   border-radius: 0.5rem;
 }
+
+@media screen and (max-width: 450px) {
+  .logistics .container {
+    grid-template-columns: auto;
+    gap: 1rem;
+  }
+  .logistics .container img {
+    width: 100%;
+    margin: 0 1rem;
+  }
+  .eventDetails {
+    font-size: 1.2rem;
+  }
+}
