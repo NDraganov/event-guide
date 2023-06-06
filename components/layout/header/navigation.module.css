@@ -38,6 +38,10 @@
   font-size: 2rem;
   color: var(--orange);
 }
+.scrolled svg {
+  font-size: 2rem;
+  color: var(--orange);
+}
 .header svg:hover {
   color: var(--redish);
 }
@@ -45,5 +49,14 @@
 @media screen and (max-width: 450px) {
   .header svg {
     display: block;
+  }
+  .scrolled svg {
+    display: block;
+  }
+  .header nav ul {
+    display: none;
+  }
+  .scrolled nav ul {
+    display: none;
   }
 }

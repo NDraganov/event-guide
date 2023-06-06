@@ -8,3 +8,10 @@
 .list li {
   list-style: none;
 }
+
+@media screen and (max-width: 450px) {
+  .list {
+    grid-template-columns: auto;
+    margin: 2rem 1rem;
+  }
+}

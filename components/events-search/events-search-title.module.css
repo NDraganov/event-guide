@@ -22,3 +22,17 @@
   font-size: 1rem;
   padding: 0.5rem;
 }
+
+@media screen and (max-width: 450px) {
+  .formTitle {
+    flex-direction: column;
+    gap: 1rem;
+    width: 92vw;
+  }
+  .formTitle .control label {
+    font-size: 1rem;
+  }
+  .formTitle .control select {
+    padding: 0.25rem;
+  }
+}

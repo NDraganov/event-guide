@@ -10,3 +10,10 @@
 .explanation p span {
   color: var(--redish);
 }
+
+@media screen and (max-width: 450px) {
+  .footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

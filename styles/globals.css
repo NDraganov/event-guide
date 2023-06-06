@@ -43,3 +43,9 @@ ul {
 a {
   text-decoration: none;
 }
+
+@media screen and (max-width: 450px) {
+  main {
+    margin: 3rem 0;
+  }
+}
