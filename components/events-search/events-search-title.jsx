@@ -16,7 +16,7 @@ export default function EventsSearchTitle(props) {
     <section>
       <form className={classes.formTitle} onSubmit={onSubmitTitleHandler}>
         <div className={classes.control}>
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title">TITLE</label>
           <select name="" id="title" ref={titleRef}>
             {allEvents.map((event) => (
               <option value={event.id} key={event.id}>
@@ -25,7 +25,7 @@ export default function EventsSearchTitle(props) {
             ))}
           </select>
         </div>
-        <Button text={"Find Event"} />
+        <Button text={"FIND EVENT"} />
       </form>
     </section>
   );

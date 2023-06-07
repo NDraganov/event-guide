@@ -9,7 +9,7 @@ export default function BackEndPage({ backEndEvents }) {
   return (
     <Fragment>
       <Head>
-        <title>Back-end Events</title>
+        <title>BACK-END EVENTS</title>
         <meta
           name="description"
           content="Explore back-end programmer's events this year"
@@ -17,7 +17,7 @@ export default function BackEndPage({ backEndEvents }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <h1>Back-end events</h1>
+        <h1>BACK-END EVENTS</h1>
         <EventsList eventsItems={backEndEvents} />
       </main>
     </Fragment>

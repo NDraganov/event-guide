@@ -27,7 +27,7 @@ export default function AllEventsPage({ allEvents }) {
   return (
     <Fragment>
       <Head>
-        <title>All Events</title>
+        <title>ALL EVENTS</title>
         <meta
           name="description"
           content="Explore all programmer's events this year"
@@ -35,12 +35,14 @@ export default function AllEventsPage({ allEvents }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <h1>All events</h1>
-        <EventsSearchTitle
-          title={allEvents}
-          onSearchTitle={findEventsByTitleHandler}
-        />
-        <EventsSearchDate onSearchDate={findEventsByDateHandler} />
+        <h1>ALL EVENTS</h1>
+        <div className={classes.forms}>
+          <EventsSearchTitle
+            title={allEvents}
+            onSearchTitle={findEventsByTitleHandler}
+          />
+          <EventsSearchDate onSearchDate={findEventsByDateHandler} />
+        </div>
         <EventsList eventsItems={allEvents} />
       </main>
     </Fragment>

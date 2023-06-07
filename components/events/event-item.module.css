@@ -27,12 +27,12 @@
   padding: 1rem;
 }
 .item h2 {
-  color: var(--redish);
+  color: var(--black);
   font-weight: 400;
   padding-bottom: 0.5rem;
 }
 .item .intro {
-  color: var(--black);
+  color: var(--grey-text);
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
@@ -48,7 +48,7 @@
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  color: var(--redish);
+  color: var(--black);
   letter-spacing: 1px;
 }
 

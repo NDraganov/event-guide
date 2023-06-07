@@ -18,7 +18,7 @@ export default function EventsSearchDate(props) {
       <form className={classes.formDate} onSubmit={onSubmitDateHandler}>
         <div className={classes.controls}>
           <div className={classes.control}>
-            <label htmlFor="month">Month</label>
+            <label htmlFor="month">MONTH</label>
             <select name="month" id="month" ref={monthRef}>
               <option value="1">January</option>
               <option value="2">February</option>
@@ -35,14 +35,14 @@ export default function EventsSearchDate(props) {
             </select>
           </div>
           <div className={classes.control}>
-            <label htmlFor="year">Year</label>
+            <label htmlFor="year">YEAR</label>
             <select name="year" id="year" ref={yearRef}>
               <option value="2023">2023</option>
               <option value="2024">2024</option>
             </select>
           </div>
         </div>
-        <Button text={"Find Events"} />
+        <Button text={"FIND EVENTS"} />
       </form>
     </section>
   );

@@ -13,7 +13,8 @@
   font-size: 1.7rem;
 }
 .sidebar nav svg:hover {
-  color: var(--orange);
+  cursor: pointer;
+  color: var(--grey);
 }
 .sidebar nav ul {
   margin-top: 3rem;

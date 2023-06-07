@@ -1,8 +1,8 @@
 .link a {
-  color: var(--orange);
+  color: var(--black);
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 .link a:hover {
-  color: var(--redish);
+  border-bottom: 2px solid var(--black);
 }

@@ -9,7 +9,7 @@ export default function FrontEndPage({ frontEndEvents }) {
   return (
     <Fragment>
       <Head>
-        <title>Front-end Events</title>
+        <title>FRONT-END EVENTS</title>
         <meta
           name="description"
           content="Explore front-end programmer's events this year"
@@ -17,7 +17,7 @@ export default function FrontEndPage({ frontEndEvents }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <h1>Front-end events</h1>
+        <h1>FRONT-END EVENTS</h1>
         <EventsList eventsItems={frontEndEvents} />
       </main>
     </Fragment>

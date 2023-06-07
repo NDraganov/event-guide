@@ -9,7 +9,7 @@ export default function FullStackEventsPage({ fullStackEvents }) {
   return (
     <Fragment>
       <Head>
-        <title>Front-stack Events</title>
+        <title>FULL-STACK EVENTS</title>
         <meta
           name="description"
           content="Explore full-stack programmer's events this year"
@@ -17,7 +17,7 @@ export default function FullStackEventsPage({ fullStackEvents }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <h1>Full-stack events</h1>
+        <h1>FULL-STACK EVENTS</h1>
         <EventsList eventsItems={fullStackEvents} />
       </main>
     </Fragment>

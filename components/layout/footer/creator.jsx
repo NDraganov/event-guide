@@ -19,11 +19,11 @@ export default function Creator() {
         </Link>
       </div>
       <div className={classes.section}>
-        <p>Nedyalko Draganov</p>
         <p>
           &copy;
           <span>{currentYear}</span>
         </p>
+        <p>Nedyalko Draganov</p>
       </div>
     </div>
   );
