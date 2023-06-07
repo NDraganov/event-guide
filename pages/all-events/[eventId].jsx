@@ -10,14 +10,16 @@ export default function EventDetailsPage({ selectedEvent }) {
   }
   return (
     <main>
-      <EventTitle title={selectedEvent.title} />
-      <EventLogistics
-        image={selectedEvent.image}
-        alt={selectedEvent.title}
-        date={selectedEvent.date}
-        location={selectedEvent.location}
-      />
-      <EventDescription description={selectedEvent.description} />
+      <div>
+        <EventTitle title={selectedEvent.title} />
+        <EventLogistics
+          image={selectedEvent.image}
+          alt={selectedEvent.title}
+          date={selectedEvent.date}
+          location={selectedEvent.location}
+        />
+        <EventDescription description={selectedEvent.description} />
+      </div>
     </main>
   );
 }

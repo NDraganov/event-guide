@@ -1,8 +1,7 @@
 .title h1 {
-  color: var(--light-grey);
+  color: var(--black);
   font-size: 4rem;
-  margin: 0;
-  text-shadow: 0px 2px 8px var(--redish);
+  margin: 1rem 0;
 }
 
 @media screen and (max-width: 450px) {
