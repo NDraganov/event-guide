@@ -24,6 +24,9 @@
   font-size: 1.3rem;
 }
 .button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   color: var(--light-grey);
   background-color: var(--black);
   border: 2px solid var(--black);
@@ -41,4 +44,7 @@
   -webkit-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
+}
+.button svg {
+  font-size: 1.3rem;
 }

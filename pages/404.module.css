@@ -1,0 +1,27 @@
+.notExist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--grey-text);
+  font-size: 1.5rem;
+}
+.notExist .title {
+  font-size: 5rem;
+  animation: flash 0.5s infinite;
+}
+.notExist .directions {
+  padding-bottom: 1rem;
+}
+.notExist .directions span {
+  color: var(--black);
+  font-weight: 700;
+}
+
+@keyframes flash {
+  0% {
+    color: var(--black);
+  }
+  100% {
+    color: var(--redish);
+  }
+}
