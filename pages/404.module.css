@@ -16,6 +16,9 @@
   color: var(--black);
   font-weight: 700;
 }
+.notExist a {
+  margin-top: 5rem;
+}
 
 @keyframes flash {
   0% {

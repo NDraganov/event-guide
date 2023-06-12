@@ -6,7 +6,7 @@ export default function FooterNavigation() {
   return (
     <div className={classes.footerNav}>
       <div>
-        <Link href={"/about-us"} title={"About us"}>
+        <Link href={"/about"} title={"About us"}>
           About us
         </Link>
       </div>

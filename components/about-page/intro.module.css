@@ -1,0 +1,35 @@
+.intro .section {
+  display: grid;
+  place-items: center;
+  background-color: var(--white);
+  width: 100vw;
+}
+.intro .text,
+.intro .textDark {
+  color: var(--grey-text);
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 2rem 25%;
+  text-align: center;
+}
+.intro .text span {
+  color: var(--black);
+}
+.intro .textDark {
+  background-color: var(--light-grey);
+  color: var(--black);
+
+  margin-bottom: 2rem;
+}
+.intro .textDark span {
+  color: var(--grey-text);
+}
+
+.intro a {
+  font-size: 1.1rem;
+  width: 20%;
+  margin-bottom: 2rem;
+}
+.intro img {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
