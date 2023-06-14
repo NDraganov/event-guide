@@ -1,11 +1,18 @@
+import ResultsIntro from "@/components/events-search/results-intro";
 import EventsList from "@/components/events/events-list";
 import { getFilteredByDateEvents } from "@/helpers/api-util";
 
-export default function FilteredByDateEventsPage({ events }) {
+export default function FilteredByDateEventsPage({ events, date }) {
   if (!events || events.lenght === 0) {
     return <p>No events found!</p>;
   }
-  return <EventsList eventsItems={events} />;
+
+  return (
+    <main>
+      <ResultsIntro date={date} />
+      <EventsList eventsItems={events} />
+    </main>
+  );
 }
 
 export async function getServerSideProps(context) {
@@ -22,8 +29,8 @@ export async function getServerSideProps(context) {
   if (
     isNaN(numYear) ||
     isNaN(numMonth) ||
-    numYear > 2030 ||
-    numYear < 2021 ||
+    numYear > 2025 ||
+    numYear < 2023 ||
     numMonth < 1 ||
     numMonth > 12
   ) {
@@ -37,9 +44,12 @@ export async function getServerSideProps(context) {
     month: numMonth,
   });
 
+  const date = new Date(numYear, numMonth - 1);
+
   return {
     props: {
       events: filteredEvents,
+      date: JSON.parse(JSON.stringify(date)),
     },
   };
 }
