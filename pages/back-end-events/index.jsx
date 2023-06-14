@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
+import PageIntro from "@/components/events/page-intro";
 import EventsList from "@/components/events/events-list";
 import { getBackEndEvents } from "@/helpers/api-util";
 
@@ -17,7 +18,10 @@ export default function BackEndPage({ backEndEvents }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <h1>BACK-END EVENTS</h1>
+        <PageIntro
+          title={"All back-end events"}
+          introduction={"Explore all back-end events."}
+        />
         <EventsList eventsItems={backEndEvents} />
       </main>
     </Fragment>

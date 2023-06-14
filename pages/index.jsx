@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
+import PageIntro from "@/components/events/page-intro";
 import EventsList from "@/components/events/events-list";
 import { getFeaturedEvents } from "@/helpers/api-util";
 
@@ -14,6 +15,10 @@ export default function Home({ featuredEvents }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
+        <PageIntro
+          title={"Most popular events"}
+          introduction={"Explore the most popular developer events this year."}
+        />
         <EventsList eventsItems={featuredEvents} />
       </main>
     </Fragment>

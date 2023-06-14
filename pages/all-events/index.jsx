@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { Fragment } from "react";
+import PageIntro from "@/components/events/page-intro";
 import EventsList from "@/components/events/events-list";
 import EventsSearchTitle from "@/components/events-search/events-search-title";
 import EventsSearchDate from "@/components/events-search/events-search-date";
@@ -35,7 +36,7 @@ export default function AllEventsPage({ allEvents }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <h1>ALL EVENTS</h1>
+        <PageIntro title={"All events"} introduction={"Explore all events."} />
         <div className={classes.forms}>
           <EventsSearchTitle
             title={allEvents}
