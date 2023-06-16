@@ -1,0 +1,38 @@
+.homeIntro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100vw;
+  margin-bottom: 3rem;
+}
+.homeIntro .image img {
+  border-radius: 0.5rem;
+}
+.homeIntro .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.homeIntro .intro svg {
+  color: var(--orange);
+  font-size: 2rem;
+}
+.homeIntro .intro div:first-child {
+  display: flex;
+  align-items: center;
+}
+.homeIntro .intro div:first-child h2 {
+  color: var(--purple);
+  font-size: 2rem;
+}
+.homeIntro .intro div:first-child h2 span {
+  color: var(--orange);
+}
+.homeIntro .intro p {
+  color: var(--grey-text);
+  font-size: 1.3rem;
+  font-weight: 600;
+}

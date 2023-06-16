@@ -18,6 +18,8 @@
   --grey-text: #86868b;
   --light-grey: #f5f5f7;
   --redish: #db005b;
+  --purple: #77037b;
+  --orange: #fc4f00;
 }
 body {
   background-color: var(--light-grey);
