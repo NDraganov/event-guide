@@ -1,8 +1,8 @@
 .link a {
-  color: var(--black);
+  color: var(--purple);
   font-size: 1.3rem;
   font-weight: 400;
 }
 .link a:hover {
-  border-bottom: 2px solid var(--black);
+  color: var(--orange);
 }

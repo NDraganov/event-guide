@@ -1,11 +1,11 @@
 .brand {
-  color: var(--black);
+  color: var(--purple);
   font-size: 2rem;
   font-weight: 400;
   text-decoration: none;
 }
 .brand:hover {
-  color: var(--grey-text);
+  color: var(--orange);
 }
 
 @media screen and (max-width: 450px) {

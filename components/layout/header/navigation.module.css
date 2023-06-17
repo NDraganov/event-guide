@@ -16,10 +16,10 @@
 .header svg {
   display: none;
   font-size: 2rem;
-  color: var(--black);
+  color: var(--purple);
 }
 .header svg:hover {
-  color: var(--light-grey);
+  color: var(--orange);
 }
 
 /* On scroll Header */
@@ -36,6 +36,9 @@
 .scrolled a:first-child {
   color: var(--light-grey);
 }
+.scrolled a:first-child:hover {
+  color: var(--orange);
+}
 .scrolled .links a {
   color: var(--light-grey);
 }
@@ -43,18 +46,18 @@
   display: none;
 }
 .scrolled .active {
-  color: var(--light-grey) !important;
-  border-bottom: 2px solid var(--light-grey);
+  color: var(--white) !important;
+  border-bottom: 2px solid var(--orange);
 }
 .active {
-  border-bottom: 2px solid var(--black);
+  color: var(--orange) !important;
 }
 .inactive {
-  color: var(--black);
+  color: var(--purple);
 }
 .scrolled svg {
   font-size: 2rem;
-  color: var(--light-grey);
+  color: var(--purple);
 }
 
 @media screen and (max-width: 450px) {

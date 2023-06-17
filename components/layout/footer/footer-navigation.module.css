@@ -1,14 +1,8 @@
-.footerNav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
 .footerNav a {
-  color: var(--black);
+  color: var(--white);
   font-size: 1.2rem;
   text-decoration: none;
 }
 .footerNav a:hover {
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--orange);
 }

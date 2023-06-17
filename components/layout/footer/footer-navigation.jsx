@@ -10,11 +10,6 @@ export default function FooterNavigation() {
           About us
         </Link>
       </div>
-      <div>
-        <Link href={"/terms-and-conditions"} title={"Terms and Conditions"}>
-          Terms and Conditions
-        </Link>
-      </div>
     </div>
   );
 }

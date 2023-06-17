@@ -9,8 +9,8 @@ export default function Footer() {
       <hr className={classes.line} />
       <div className={classes.explanation}>
         <p>
-          The content of this website is <span>fictional</span>. The purpose of
-          this website is to practice my web development skills.
+          The content of this website is <span>fictional</span>. This website is
+          for educational purpose.
         </p>
       </div>
       <FooterNavigation />
