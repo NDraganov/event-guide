@@ -10,7 +10,7 @@
 }
 .section a svg {
   font-size: 2rem;
-  color: var(--white);
+  color: var(--purple);
 }
 .section a svg:hover {
   color: var(--orange);
