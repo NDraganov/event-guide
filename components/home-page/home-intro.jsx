@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaHashtag } from "react-icons/fa";
 
 import classes from "./home-intro.module.css";
+import Button from "../ui/button";
 
 export default function HomeIntro() {
   return (
@@ -17,7 +18,7 @@ export default function HomeIntro() {
         />
       </div>
       <div className={classes.intro}>
-        <div>
+        <div className={classes.title}>
           <FaHashtag />
           <h2>
             <span>1</span> Platform for <span>Dev</span> learning events.
@@ -26,6 +27,11 @@ export default function HomeIntro() {
         <div>
           <p>Here you can find events on every development topic and level.</p>
         </div>
+        <Button
+          href={"/all-events"}
+          title={"All Events"}
+          text={"Explore Events"}
+        />
       </div>
     </section>
   );
