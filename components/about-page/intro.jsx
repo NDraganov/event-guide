@@ -24,7 +24,7 @@ export function Intro({ aboutText }) {
         </p>
         <Button
           href={"/all-events"}
-          text={"START EXPLORING"}
+          text={"Start Exploring"}
           title={"Start Exploring"}
         />
         {/* Source - https://www.insperity.com/blog/cost-effective-employee-training-and-development/ */}

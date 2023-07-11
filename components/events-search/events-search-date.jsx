@@ -42,7 +42,7 @@ export default function EventsSearchDate(props) {
             </select>
           </div>
         </div>
-        <Button text={"FIND EVENTS"} />
+        <Button text={"Find Events"} title={"Find Events"} />
       </form>
     </section>
   );

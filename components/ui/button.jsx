@@ -26,7 +26,7 @@ export default function Button({ href, title, text, home, onClick }) {
   }
 
   return (
-    <button className={classes.button} onClick={onClick}>
+    <button className={classes.button} title={title} onClick={onClick}>
       <BiSearchAlt2 /> {text}
     </button>
   );
