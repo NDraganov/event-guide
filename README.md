@@ -4,6 +4,8 @@ DevGuide is a web app platform whose purpose is to help in the education and imp
 
 ## Links
 
+[Live](https://event-guide-seven.vercel.app/about)
+
 [GitHub](https://github.com/NDraganov/event-guide)
 
 ## Overview
@@ -15,6 +17,9 @@ Includes separate pages for the major developments - front-end, back-end, full-s
 ## Technologies
 
 Next.js
+
 CSS - vanilla CSS
+
 React icons
+
 Firebase - for storage of the events and their details
